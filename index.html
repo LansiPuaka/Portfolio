@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Portfolio Website</title>
+
+  <!-- Font Awesome CDN for Icons -->
+  <link 
+    rel="stylesheet" 
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" 
+  />
+
+  <!-- Main CSS -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- HEADER / NAVBAR -->
+  <header class="header">
+    <a href="#about" class="logo"><span>L</span>P</a>
+
+    <ul class="nav-links">
+      <li><a href="#about" class="nav-item">About</a></li>
+      <li><a href="#experience" class="nav-item">Experience</a></li>
+      <li><a href="#projects" class="nav-item">Projects</a></li>
+      <li><a href="#contact" class="nav-item">Contact</a></li>
+    </ul>
+
+    <i class="fa-solid fa-bars" id="menu-icon"></i>
+
+    <button class="visit-btn" id="github-btn">Visit GitHub</button>
+  </header>
+
+  <!-- ABOUT / HERO SECTION -->
+  <section class="about" id="about">
+    <div class="about-container">
+      
+      <!-- Auto-Sliding Profile Image Gallery -->
+      <div class="slider-container">
+        <div class="slider-wrapper">
+          <img src="profile.jpg" alt="Profile Picture 1" class="slide active" />
+          <img src="images/experience.jpg" alt="Profile Picture 2" class="slide" />
+          <img src="images/project1.png" alt="Profile Picture 3" class="slide" />
+        </div>
+      </div>
+
+      <div class="info-box">
+        <div class="text">
+          <h3>Hi, I'm</h3>
+          <h1>Mark Anthony</h1>
+          <span>Tech Expert</span>
+        </div>
+
+        <div class="btn-group">
+          <button class="btn">Download CV</button>
+          <button class="btn" id="contact-me-btn">Contact</button>
+        </div>
+
+        <!-- Social Links with Direct External Navigation -->
+        <div class="socials">
+          <a href="https://github.com/LansiPuaka" target="_blank" rel="noopener noreferrer">
+            <i class="fa-brands fa-github"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/mark-anthony-799a27309/" target="_blank" rel="noopener noreferrer">
+            <i class="fa-brands fa-linkedin"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE SECTION -->
+  <section class="experience" id="experience">
+    <h2 class="section-title">Experience</h2>
+
+    <div class="experience-info">
+      <div class="grid">
+        <div class="grid-card">
+          <i class="fa-solid fa-code"></i>
+          <span>Frontend Development</span>
+          <p>Building responsive websites using HTML, CSS, JavaScript, and modern tools.</p>
+        </div>
+
+        <div class="grid-card">
+          <i class="fa-solid fa-laptop-code"></i>
+          <span>UI/UX Design</span>
+          <p>Designing user-centric interfaces and wireframes with modern aesthetics.</p>
+        </div>
+
+        <div class="grid-card">
+          <i class="fa-solid fa-layer-group"></i>
+          <span>Backend Basics</span>
+          <p>Connecting frontend apps to REST APIs, databases, and server logic.</p>
+        </div>
+
+        <div class="grid-card">
+          <i class="fa-solid fa-mobile-screen"></i>
+          <span>Responsive Design</span>
+          <p>Ensuring web pages look great on desktop, tablet, and mobile displays.</p>
+        </div>
+      </div>
+
+      <img src="profile.jpg" alt="Experience Image" />
+    </div>
+  </section>
+
+  <!-- PROJECTS SECTION -->
+  <section class="projects" id="projects">
+    <h2 class="section-title">Recent Projects</h2>
+
+    <div class="projects-grid">
+      <div class="project-card">
+        <img src="images/project1.png" alt="Project 1" />
+        <h3>E-Commerce Web App</h3>
+        <p>A full-featured online shopping platform with cart and checkout capabilities.</p>
+        <div class="btn-group">
+          <button class="btn">Live Demo</button>
+          <button class="btn">GitHub</button>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <img src="images/project2.png" alt="Project 2" />
+        <h3>Task Management App</h3>
+        <p>An interactive productivity application to organize tasks and daily habits.</p>
+        <div class="btn-group">
+          <button class="btn">Live Demo</button>
+          <button class="btn">GitHub</button>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <img src="images/project3.png" alt="Project 3" />
+        <h3>Weather Dashboard</h3>
+        <p>Real-time weather tracking application fetching global API metrics.</p>
+        <div class="btn-group">
+          <button class="btn">Live Demo</button>
+          <button class="btn">GitHub</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT SECTION -->
+  <section class="contact" id="contact">
+    <div class="input-box">
+      <h2 class="section-title">Contact Me</h2>
+
+      <div class="input">
+        <input type="email" placeholder="example@email.com" />
+        <i class="fa-solid fa-envelope"></i>
+      </div>
+
+      <button class="btn">Send Message</button>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <p class="copyright">&copy; 2026 How to Web Dev. All Rights Reserved.</p>
+  </footer>
+
+  <!-- Script File -->
+  <script src="script.js"></script>
+</body>
+</html>
