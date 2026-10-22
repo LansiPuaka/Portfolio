@@ -74,7 +74,7 @@ if (contactMeBtn) {
 // ==========================================
 const roleSpan = document.querySelector('.info-box span');
 if (roleSpan) {
-  const roles = ['Tech Expert', 'Content Creator', 'UI/UX Designer', 'Web Creator'];
+  const roles = ['Tech Expert', 'Content Creator', 'Graphic Designer'];
   let roleIndex = 0;
   let charIndex = 0;
   let isDeleting = false;
